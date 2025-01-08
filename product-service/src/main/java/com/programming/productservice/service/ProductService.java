@@ -28,7 +28,6 @@ public class ProductService {
     public void createProduct(ProductRequest productRequest) {
         Product product = new Product(productRequest.getName(), productRequest.getDescription(),
                 productRequest.getPrice());
-
         productRepository.save(product);
     }
 
