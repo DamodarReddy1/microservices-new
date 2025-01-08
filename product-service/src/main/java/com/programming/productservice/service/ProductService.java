@@ -30,7 +30,6 @@ public class ProductService {
                 productRequest.getPrice());
         productRepository.save(product);
     }
-
     public List<ProductResponse> getAllProducts() {
         List<Product> products = productRepository.findAll();
 
